@@ -24,3 +24,7 @@ tr td:first-child{
 thead tr th{
     background-color: antiquewhite;
 }
+#title{
+    text-align: center;
+    vertical-align: middle;
+}
