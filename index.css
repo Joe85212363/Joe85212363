@@ -1,3 +1,6 @@
+body{
+	margin: 0px;
+}
 #container {
     width: 960px;
     margin: 0px auto;
@@ -33,7 +36,6 @@ thead tr th{
 	/* 選單大小 */
 	width: 960px;
 	height: 60px;
-    
 }
 #menu ul {
 	/* 取消ul樣式符號 */
