@@ -11,6 +11,21 @@
 
 <body>
     <div id="container">
+        <div id="menu">
+            <ul>
+                <li> <a href="index.html">首頁</a>
+                </li>
+                <li> <a href="#">關於我</a>
+                    <ul>
+                        <li><a href="#sb">作品集</a></li>
+                        <li><a href="#mb">學歷</a></li>
+                        <li><a href="#tm">證照</a></li>
+                    </ul>
+                </li>
+                <li><a href="http://www.aeust.edu.tw/" target="_blank">亞東科大</a></li>
+                <li><a href="mailto:110111129@mail.aeust.edu.tw">聯絡我們</a></li>
+            </ul>
+        </div>
         <div id="title">
             <h1>林政宏 <br>ZHENG-HONG LIN </h1>
             <h2>
@@ -21,16 +36,21 @@
         <hr>
         <p>活在當下，別在懷念過去或者憧憬未來中浪費掉你現在的生活。</p>
         <hr>
-        <h2>作品集:</h2>
+        <h2 id="sb">作品集:</h2>
         <ul>
             <li><a href="html01.html" target="_blank">HTML基礎練習</a></li>
             <li><a href="css01.html" target="_blank">CSS基礎練習-行內樣式表</a></li>
             <li><a href="css02.html" target="_blank">CSS基礎練習-內部樣式表</a></li>
             <li><a href="css03.html" target="_blank">CSS基礎練習-外部樣式表</a></li>
             <li><a href="css_basic.html" target="_blank">CSS基礎練習-樣式表</a></li>
-            <li><a href="https://www.figma.com/proto/kG3XG9EsG8LN4MkVcmyUWD/%E5%80%8B%E4%BA%BA?node-id=2%3A2&scaling=scale-down&page-id=0%3A1" target="_blank">figma</a></li>
+            <li><a href="https://www.figma.com/proto/kG3XG9EsG8LN4MkVcmyUWD/%E5%80%8B%E4%BA%BA?node-id=2%3A2&scaling=scale-down&page-id=0%3A1"
+                    target="_blank">figma</a></li>
+            <li><a href="navBar.html" target="_blank">導覽列作業</a></li>
+            <li><a href="nestedNav.html" target="_blank">雙層導覽列作業</a></li>
+            <li><a href="float.html" target="_blank">float排版練習</a></li>
+
         </ul>
-        <h2>學歷</h2>
+        <h2 id="mb">學歷</h2>
         <ol>
             <li><a href="https://www.tgps.ntpc.edu.tw/" target="_blank" rel="noopener noreferrer">新北市板橋區大觀國民小學</a></li>
             <li><a href="https://www.tkjhs.ntpc.edu.tw/" target="_blank" rel="noopener noreferrer">新北市板橋區大觀國民中學</a></li>
@@ -38,134 +58,139 @@
             </li>
             <li><a href="https://www.aeust.edu.tw/" target="_blank" rel="noopener noreferrer">亞東科技大學</a></li>
         </ol>
-        <h2>證照</h2>
-        <ul>
-            <li>
-                <h3>中華民國技術士證 會計事務-資訊丙級</h3>
-                <br>
-                <img src="./img/1.jpg" width="350" height="220" alt="會計">
-            </li>
-            <li>
-                <h3>中華民國技術士證 網頁設計 丙級</h3>
-                <br>
-                <img src="./img/web.jpg" width="350" height="220" alt="web">
-            </li>
-            <li>
-                <h3>TQC-OA 辦公軟體應用類 PowerPoint 2010進階級</h3>
-                <br>
-                <img src="./img/powerpoint.jpg" width="350" height="220" alt="powerpoint">
-            </li>
-            <li>
-                <h3>中華民國技術士證 電腦軟體應用 丙級</h3>
-                <br>
-                <img src="./img/software.jpg" width="350" height="220" alt="software">
-            </li>
-            <li>
-                <h3>TQC Visual Basic 2010基礎物件導向視窗及資料庫程式設計</h3>
-                <br>
-                <img src="./img/vb.jpg" width="350" height="220" alt="vb">
-            </li>
-        </ul>
+        <h2 id="tm">證照</h2>
+                <div class="picture">
+                    <h3>中華民國技術士證 會計事務-資訊丙級</h3>
+                    <br>
+                    <img src="./img/1.jpg" width="350" height="220" alt="會計">
+                </div>
+
+                <div class="picture">
+                    <h3>中華民國技術士證 網頁設計 丙級</h3>
+                    <br>
+                    <img src="./img/web.jpg" width="350" height="220" alt="web">
+                </div>
+
+                <div class="picture">
+                    <h3>TQC-OA 辦公軟體應用類 PowerPoint 2010進階級</h3>
+                    <br>
+                    <img src="./img/powerpoint.jpg" width="350" height="220" alt="powerpoint">
+                </div>
+
+                <div class="picture">
+                    <h3>中華民國技術士證 電腦軟體應用 丙級</h3>
+                    <br>
+                    <img src="./img/software.jpg" width="350" height="220" alt="software">
+                </div>
+
+                <div class="vb">
+                    <h3>TQC Visual Basic 2010基礎物件導向視窗及資料庫程式設計</h3>
+                    <br>
+                    <img src="./img/vb.jpg" width="350" height="220" alt="vb">
+                </div>
 
 
-        <table border="1" style="border: aquamarine;">
-            <caption>功課表</caption>
-            <thead>
-                <tr>
-                    <th></th>
-                    <th>日</th>
-                    <th>一</th>
-                    <th>二</th>
-                    <th>三</th>
-                    <th>四</th>
-                    <th>五</th>
-                    <th>六</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>第1節<br>(08:10-09:00)</td>
-                    <td></td>
-                    <td></td>
-                    <td>英文 <br> 10414</td>
-                    <td>進階程式設計 <br> 30803</td>
-                    <td></td>
-                    <td>法律與生活 <br> 10402</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>第2節 <br> (09:10-10:00)</td>
-                    <td></td>
-                    <td>經濟學 <br> 10417</td>
-                    <td>英文 <br> 10414</td>
-                    <td>進階程式設計 <br> 30803</td>
-                    <td>資訊管理導論 <br> 10407</td>
-                    <td>法律與生活 <br> 10402</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>第3節 <br> (10:10-11:00)</td>
-                    <td></td>
-                    <td>經濟學 <br> 10417</td>
-                    <td>國文 <br> 10506</td>
-                    <td></td>
-                    <td>資訊管理導論 <br> 10407</td>
-                    <td>體育<br> W0101</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>第4節 <br> (11:10-12:00)</td>
-                    <td></td>
-                    <td>經濟學 <br> 10417</td>
-                    <td>國文 <br> 10506</td>
-                    <td></td>
-                    <td>資訊管理導論 <br> 10407</td>
-                    <td>體育<br> W0101</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>第5節 <br> (13:10-14:00)</td>
-                    <td></td>
-                    <td>進階程式設計 <br> 30803</td>
-                    <td>網頁設計 <br> 30803</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>第6節 <br> (14:10-15:00)</td>
-                    <td></td>
-                    <td>進階程式設計 <br> 30803</td>
-                    <td>網頁設計 <br> 30803</td>
-                    <td></td>
-                    <td>會計學 <br> 10513</td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>第7節 <br> (15:10-16:00)</td>
-                    <td></td>
-                    <td></td>
-                    <td>網頁設計 <br> 30803</td>
-                    <td></td>
-                    <td>會計學 <br> 10513</td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>第8節 <br> (16:10-17:00)</td>
-                    <td></td>
-                    <td></td>
-                    <td>網頁設計 <br> 30803</td>
-                    <td></td>
-                    <td>會計學 <br> 10513</td>
-                    <td></td>
-                    <td></td>
-                </tr>
+        <div class="worktable"> 
+            <table border="1" style="border: aquamarine;">
+                <caption>功課表</caption>
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th>日</th>
+                        <th>一</th>
+                        <th>二</th>
+                        <th>三</th>
+                        <th>四</th>
+                        <th>五</th>
+                        <th>六</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>第1節<br>(08:10-09:00)</td>
+                        <td></td>
+                        <td></td>
+                        <td>英文 <br> 10414</td>
+                        <td>進階程式設計 <br> 30803</td>
+                        <td></td>
+                        <td>法律與生活 <br> 10402</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>第2節 <br> (09:10-10:00)</td>
+                        <td></td>
+                        <td>經濟學 <br> 10417</td>
+                        <td>英文 <br> 10414</td>
+                        <td>進階程式設計 <br> 30803</td>
+                        <td>資訊管理導論 <br> 10407</td>
+                        <td>法律與生活 <br> 10402</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>第3節 <br> (10:10-11:00)</td>
+                        <td></td>
+                        <td>經濟學 <br> 10417</td>
+                        <td>國文 <br> 10506</td>
+                        <td></td>
+                        <td>資訊管理導論 <br> 10407</td>
+                        <td>體育<br> W0101</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>第4節 <br> (11:10-12:00)</td>
+                        <td></td>
+                        <td>經濟學 <br> 10417</td>
+                        <td>國文 <br> 10506</td>
+                        <td></td>
+                        <td>資訊管理導論 <br> 10407</td>
+                        <td>體育<br> W0101</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>第5節 <br> (13:10-14:00)</td>
+                        <td></td>
+                        <td>進階程式設計 <br> 30803</td>
+                        <td>網頁設計 <br> 30803</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>第6節 <br> (14:10-15:00)</td>
+                        <td></td>
+                        <td>進階程式設計 <br> 30803</td>
+                        <td>網頁設計 <br> 30803</td>
+                        <td></td>
+                        <td>會計學 <br> 10513</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>第7節 <br> (15:10-16:00)</td>
+                        <td></td>
+                        <td></td>
+                        <td>網頁設計 <br> 30803</td>
+                        <td></td>
+                        <td>會計學 <br> 10513</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>第8節 <br> (16:10-17:00)</td>
+                        <td></td>
+                        <td></td>
+                        <td>網頁設計 <br> 30803</td>
+                        <td></td>
+                        <td>會計學 <br> 10513</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
 
-            </tbody>
-        </table>
+                </tbody>
+            </table>
+        </div>
+
 
 </body>
 

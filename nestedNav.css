@@ -1,39 +1,8 @@
-#container {
-    width: 960px;
-    margin: 0px auto;
-    background-color: bisque;
-}
-th{
-    width:98px;
-    height:98px;
-    text-align: center;
-    background-color: rgb(177, 125, 214);
-}
-tr{
-    width:98px;
-    height:98px;
-    text-align: center;
-    background-color: rgb(223, 193, 233);           
-}
-table{
-    margin: 0px auto;
-}
-tr td:first-child{
-    background-color: rgb(97, 186, 192);
-}
-thead tr th{
-    background-color: antiquewhite;
-}
-#title{
-    text-align: center;
-    vertical-align: middle;
-}
 /* ---------- 大小與定位 ---------- */
 #menu {
 	/* 選單大小 */
 	width: 960px;
-	height: 60px;
-    
+	height:30px;
 }
 #menu ul {
 	/* 取消ul樣式符號 */
@@ -42,7 +11,7 @@ thead tr th{
 	margin:0;
 	padding:0;
 	/* 內有浮動元件時，需設overflow才會自動調整大小 */
-    overflow:auto;
+  overflow:auto;
 }
 
 #menu ul li {
@@ -128,7 +97,7 @@ thead tr th{
 }
 /* 第一層ul背景色彩與邊框 */
 #menu ul {
-	background:#1de7d3;
+	background:#6f6f6f;
 }
 /* 第一層a字型 */
 #menu ul li a {
@@ -156,18 +125,4 @@ thead tr th{
 /* 觸動第二層以上li時改變背景色 */
 #menu ul li ul li:hover, #menu ul li ul li a:hover {
 	background:#dfdfdf;
-}
-.picture{
-    text-align: left;
-    width: 45%;
-    padding: 10px;
-    float: right;
-
-}
-.vb{
-    text-align: center;
-    clear:both;
-}
-.worktable{
-    clear:both;
 }
