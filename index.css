@@ -36,6 +36,8 @@ thead tr th{
 	/* 選單大小 */
 	width: 960px;
 	height: 60px;
+	position: fixed ;
+	top: 0px;
 }
 #menu ul {
 	/* 取消ul樣式符號 */
