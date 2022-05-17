@@ -34,7 +34,7 @@ nav a:hover{
     display:flex;
     justify-content: space-around;
     align-items: center;
-    background-color: rgba(246, 234, 220);
+    background-color: rgba(246, 234, 220, 80%);
 }
 
 .title{
