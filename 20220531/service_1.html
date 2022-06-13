@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <link rel="apple-touch-icon" type="image/png" href="https://www.ccf.org.tw/unitoutweb/images/favicon.ico" />
+    <meta name="apple-mobile-web-app-title" content="CodePen">
+
+    <link rel="shortcut icon" type="image/x-icon" href="https://www.ccf.org.tw/unitoutweb/images/favicon.ico" />
+
+    <link rel="mask-icon" type="image/x-icon" href="https://www.ccf.org.tw/unitoutweb/images/favicon.ico"
+        color="#111" />
+
+
+    <title>CodePen - Restaurant Website </title>
+    <script>
+        window.console = window.console || function (t) { };
+    </script>
+
+
+
+    <script>
+        if (document.location.search.match(/type=embed/gi)) {
+            window.parent.postMessage("resize", "*");
+        }
+    </script>
+
+
+</head>
+
+<body translate="no">
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Restraunt</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+            integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="style.css" />
+    </head>
+
+    <body>
+        <nav class="navbar">
+            <div class="navbar-container container">
+                <input type="checkbox" name="" id="">
+                <div class="hamburger-lines">
+                    <span class="line line1"></span>
+                    <span class="line line2"></span>
+                    <span class="line line3"></span>
+                </div>
+                <ul class="menu-items">
+                    <li><a href="about.html">認識家扶</a></li>
+                    <li><a href="service.html">服務介紹</a></li>
+                    <li><a href="news.html">活動報導</a></li>
+                    <li><a href="donation.html">捐款參與</a></li>
+                    <li><a href="publish.html">出版推廣</a></li>
+                    <li><a href="qa.html">Q&A</a></li>
+                </ul>
+                <h1 class="logo"><a href="index.html"><img src="/20220531/img/logo.png" height="61" alt="logo"></h1></a>
+            </div>
+        </nav>
+        <section class="showcase-area" id="showcase">
+            <div class="showcase-container">
+                <h1 class="main-title" id="home">大同育幼院</h1>
+                <p>家扶基金會</p>
+            </div>
+        </section>
+        <section id="about">
+            <div class="about-wrapper container">
+                <div class="about-text">
+                    <p class="small">生活輔導</p>
+                    <p>
+                        育幼安置服務兒少生活分布於四個小家及自立準備宿舍中，每家均配置2-3名保育/生輔員，負責兒少生活適應照顧、生活常規行為引導、課業督促協助、日常生活技能培養、金錢財務管理、健康醫療營養照顧、兒少權益維護保障、小家人際關後維護、家庭環境佈置維護以及陪同參與各項活動。透過日常生活教育及活動參與的過程，協助兒少看見生命的價值，學習尊重自己及其他生命，建構關懷、負責、尊重三大品格理念，以正向溫和態度面對生命中的各項難題與困境。
+                    </p>
+                </div>
+                <div class="about-img">
+                    <img src="https://www.ccf.org.tw/unitoutweb/laravel-filemanager/photos/45/0201/6231a0643fce8.jpg" alt="food" />
+                </div>
+            </div>
+        </section>
+
+
+        <footer id="footer">
+            <h2>Restraunt &copy; all rights reserved</h2>
+        </footer>
+    </body>
+    <!-- 
+    .................../ JS Code for smooth scrolling /...................... -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            // Add smooth scrolling to all links
+            $("a").on("click", function (event) {
+                // Make sure this.hash has a value before overriding default behavior
+                if (this.hash !== "") {
+                    // Prevent default anchor click behavior
+                    event.preventDefault();
+
+                    // Store hash
+                    var hash = this.hash;
+
+                    // Using jQuery's animate() method to add smooth page scroll
+                    // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                    $("html, body").animate(
+                        {
+                            scrollTop: $(hash).offset().top,
+                        },
+                        800,
+                        function () {
+                            // Add hash (#) to URL when done scrolling (default click behavior)
+                            window.location.hash = hash;
+                        }
+                    );
+                } // End if
+            });
+        });
+    </script>
+
+    </html>
+
+
+
+
+
+</body>
+
+</html>
